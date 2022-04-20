@@ -1,3 +1,13 @@
+'''
+The implementation of this project refers to the source code of the paper "Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels", cited below:
+@inproceedings{han2018coteaching,
+  title={Co-teaching: Robust training of deep neural networks with extremely noisy labels},
+  author={Han, Bo and Yao, Quanming and Yu, Xingrui and Niu, Gang and Xu, Miao and Hu, Weihua and Tsang, Ivor and Sugiyama, Masashi},
+  booktitle={NeurIPS},
+  pages={8535--8545},
+  year={2018}
+}
+'''
 import torch
 from torch import nn
 import torchvision
