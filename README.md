@@ -84,7 +84,8 @@ Results on ANIMAL-10N
 |  | Co-Teaching  | Noise Filter + Co-Teaching | Noise Filter + Triple-Teaching | Noise Filter + Triple-Teaching (with a shallow network) |
 | ---------------: | -----: | -------: | --------: | --------: |
 |  ANIMAL-10N      | 71.27% | 69.08%        | **71.33%**    |  69.35%   |
-## Citation
+
+## Reference
 
 The implementation of this project refers to the source code of the paper "Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels", cited below:
 
