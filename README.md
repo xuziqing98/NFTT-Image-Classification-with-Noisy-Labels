@@ -35,7 +35,8 @@ ${ROOT}
         `-- test_batch
 ```
 
-**For ANIMAL-10N**, please download from [GoogleDrive] (https://drive.google.com/drive/folders/1FQ8YOACjosRtkEJqOeXMGS0blfSaevVn?usp=sharing) Extract them under {ROOT}/dataset, and make them look like this:
+**For ANIMAL-10N**, please download from [GoogleDrive] (https://drive.google.com/file/d/1NPq9Ujuylg_xgiiMPQbwHr3rFwi7quYP/view?usp=sharing) 
+Extract them under {ROOT}/dataset, and make them look like this:
 ```
 ${ROOT}
 |-- dataset
