@@ -74,14 +74,14 @@ python main.py --dataset cifar10 --cifar10_task_num 1 --tri_or_co Tri --noisy_fi
 ## Performance
 
 Results on CIFAR-10 (50 Epochs)
-| CIFAR-10 TASKS | Co-Teaching  | Noisy Filter + Co-Teaching | Noisy Filter + Triple-Teaching | Noisy Filter + Triple-Teaching (with a shallow network) |
+| CIFAR-10 TASKS | Co-Teaching  | Noise Filter + Co-Teaching | Noise Filter + Triple-Teaching | Noise Filter + Triple-Teaching (with a shallow network) |
 | ---------------: | -----: | -------: | --------: | --------: |
 |  Symmetry 40%    | 87.186% | 86.59%   | **87.187%**    | 86.14%    |
 |  Symmetry 80%    | 46.27% | 62.30%   | 62.53%    | **62.97%**    |
 |  Asymmetry 40%   | 85.69% | 83.22%   | **85.90%**    | 77.26%    |
 
 Results on ANIMAL-10N
-|  | Co-Teaching  | Noisy Filter + Co-Teaching | Noisy Filter + Triple-Teaching | Noisy Filter + Triple-Teaching (with a shallow network) |
+|  | Co-Teaching  | Noise Filter + Co-Teaching | Noise Filter + Triple-Teaching | Noise Filter + Triple-Teaching (with a shallow network) |
 | ---------------: | -----: | -------: | --------: | --------: |
 |  ANIMAL-10N      | 71.27% | 69.08%        | **71.33%**    |  69.35%   |
 ## Citation
