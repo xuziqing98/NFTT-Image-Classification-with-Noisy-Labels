@@ -17,6 +17,52 @@ All code was developed and tested on a single machine equiped with a NVIDIA GeFo
 - PyTorch 1.11.0
 - numpy 1.22.3
 
+## Datasets
+
+**For CIFAR-10**, the dataset is available under {POSE_ROOT}/dataset as below:
+```
+${ROOT}
+|-- dataset
+`-- |-- cifar-10-batches-py
+    `-- |-- cifar10_noisy_labels_task1.json
+        |-- cifar10_noisy_labels_task2.json
+        |-- cifar10_noisy_labels_task3.json
+        |-- data_batch_1
+        |-- data_batch_2
+        |-- data_batch_3
+        |-- data_batch_4
+        |-- data_batch_5
+        `-- test_batch
+```
+
+**For ANIMAL-10N**, please download from [GoogleDrive] (https://drive.google.com/drive/folders/1FQ8YOACjosRtkEJqOeXMGS0blfSaevVn?usp=sharing) Extract them under {ROOT}/dataset, and make them look like this:
+```
+${ROOT}
+|-- dataset
+`-- |-- animal10N
+    `-- |-- train
+        |   |-- cat
+        |   |-- cheetah
+        |   |-- chimpanzee
+        |   |-- coyote
+        |   |-- guinea_pig
+        |   |-- hamster
+        |   |-- jaguer
+        |   |-- lynx
+        |   |-- orangutan
+        |   `-- wolf
+        `-- test
+            |-- cat
+            |-- cheetah
+            |-- chimpanzee
+            |-- coyote
+            |-- guinea_pig
+            |-- hamster
+            |-- jaguer
+            |-- lynx
+            |-- orangutan
+            `-- wolf
+```
 
 ## Running NFTT on CIFAR-10 or ANIMAL-10N
 Here is an example:
@@ -29,14 +75,14 @@ python main.py --dataset cifar10 --cifar10_task_num 1 --tri_or_co Tri --noisy_fi
 Results on CIFAR-10 (50 Epochs)
 | CIFAR-10 TASKS | Co-Teaching  | Noisy Filter + Co-Teaching | Noisy Filter + Triple-Teaching | Noisy Filter + Triple-Teaching (with a shallow network) |
 | ---------------: | -----: | -------: | --------: | --------: |
-|  Symmetry 40%    | **87.51%** | 87.01%   | 87.19%    | 86.68%    |
-|  Symmetry 80%    | 48.32% | 63.17%   | 62.53%    | **67.81%**    |
-|  Asymmetry 40%   | 85.70% | 85.99%   | **86.07%**    | 85.07%    |
+|  Symmetry 40%    | 87.186% | 86.59%   | **87.187%**    | 86.14%    |
+|  Symmetry 80%    | 46.27% | 62.30%   | 62.53%    | **62.97%**    |
+|  Asymmetry 40%   | 85.69% | 83.22%   | **85.90%**    | 77.26%    |
 
 Results on ANIMAL-10N
 |  | Co-Teaching  | Noisy Filter + Co-Teaching | Noisy Filter + Triple-Teaching | Noisy Filter + Triple-Teaching (with a shallow network) |
 | ---------------: | -----: | -------: | --------: | --------: |
-|  ANIMAL-10N      | 71.27% | -        | **71.33%**    |  69.68%   |
+|  ANIMAL-10N      | 71.27% | 69.08%        | **71.33%**    |  69.35%   |
 ## Citation
 
 The implementation of this project refers to the source code of the paper "Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels", cited below:
