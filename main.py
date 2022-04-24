@@ -30,8 +30,8 @@ parser.add_argument('--tri_or_co', type = str, help = 'Tri or Co', default = 'Tr
 parser.add_argument('--noisy_filter_or_not', type = int, default = 1) # 0-False and 1-True
 parser.add_argument('--shallow_or_not', type = int, default = 0) # 0-False and 1-True
 parser.add_argument('--forget_rate', type = float, help = 'forget rate', default = None)
-parser.add_argument('--num_gradual', type = int, default = 10, help='how many epochs for linear drop rate, can be 5, 10, 15. This parameter is equal to Tk for R(T) in Co-teaching paper.')
-parser.add_argument('--exponent', type = float, default = 1, help='exponent of the forget rate, can be 0.5, 1, 2. This parameter is equal to c in Tc for R(T) in Co-teaching paper.')
+parser.add_argument('--num_gradual', type = int, default = 10, help='how many epochs for linear drop rate, can be 5, 10, 15.')
+parser.add_argument('--exponent', type = float, default = 1, help='exponent of the forget rate, can be 0.5, 1, 2.')
 parser.add_argument('--dataset', type = str, help = 'cifar10 or animal10n', default = 'cifar10')
 parser.add_argument('--n_epoch_triple_teaching', type=int, default=50)
 parser.add_argument('--n_epoch_noisy_filter', type=int, default=20)
