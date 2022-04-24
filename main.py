@@ -16,7 +16,7 @@ import torch.optim as optim
 import torchvision.transforms as transforms
 import os
 import copy
-from model import resnet34, CNN, Net, CNN_S
+from model import CNN, Net, CNN_S
 from loader_for_CIFAR import *
 from animal10n_loader import *
 from loss_triple_teaching import loss_triple, loss_coteaching
@@ -41,7 +41,8 @@ parser.add_argument('--num_workers', type=int, default=2, help='how many subproc
 args = parser.parse_args()
 
 # python main.py --dataset cifar10 --cifar10_task_num 3 --tri_or_co Tri --noisy_filter_or_not 1 --shallow_or_not 1 --n_epoch_triple_teaching 50 --n_epoch_noisy_filter 20 --epoch_decay_start_triple_teaching 30 --epoch_decay_start_noisy_filter 10
-# python main.py --dataset cifar10 --cifar10_task_num 2 --tri_or_co Co --noisy_filter_or_not 0 --shallow_or_not 0
+# python main.py --dataset cifar10 --cifar10_task_num 1 --tri_or_co Tri --noisy_filter_or_not 0 --shallow_or_not 0
+
 # todo: set hyper-parameters
 
 LEARNING_RATE = args.lr
