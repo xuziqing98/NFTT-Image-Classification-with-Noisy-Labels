@@ -19,7 +19,7 @@ All code was developed and tested on a single machine equiped with a NVIDIA GeFo
 
 ## Datasets
 
-**For CIFAR-10**, the dataset is available under {POSE_ROOT}/dataset as below:
+**For CIFAR-10**, the dataset is available under {ROOT}/dataset as below:
 ```
 ${ROOT}
 |-- dataset
