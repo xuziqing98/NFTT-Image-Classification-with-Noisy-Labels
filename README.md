@@ -1,4 +1,4 @@
-# CAS 771 NFTT: Image Classification with Noisy Labels
+# NFTT: Image Classification with Noisy Labels
 
 This is the pytorch implementation of our proposed method, NFTT (**N**oisy **F**ilter + **T**riple **T**eaching), for image classification with noisy labels. 
 
